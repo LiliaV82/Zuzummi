@@ -1,108 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidebar</title>
-    <link rel="stylesheet" href="../Style/style2.css">
+    <link rel="stylesheet" href="Style/Style.css">
+    <link rel="stylesheet" href="Style/Confirmacion.css">
+    <link rel="stylesheet" href="Style/Botones.css">
+    <link rel="stylesheet" href="Style/AddBotes.css">
+    <!-- Instancias web -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Angkor&display=swap" rel="stylesheet">
+    
+    <title>Zuzumi</title>
 </head>
 <body>
-    <div class="menu">
-        <ion-icon name="menu-outline"></ion-icon>
-        <ion-icon name="close-outline"></ion-icon>
-    </div>
-
-    <div class="barra-lateral">
-        <div>
-            <div class="nombre-pagina">
-                <ion-icon id="cloud" name="trash-outline"></ion-icon>
-                <span>Innovastar<br>Technology</span>
-            </div>
-            <button class="boton">
-                <!-- <ion-icon name="add-outline"></ion-icon> -->
-                <span>Bienvenidos</span>
-            </button>
-        </div>
-
-        <nav class="navegacion">
-            <ul>
-                <li>
-                    <a href="#" data-link="app.html">
-                        <ion-icon name="grid-outline"></ion-icon>
-                        <span>Menú</span>
-                    </a>
+    <h1 class="ZuzumiEncabezado">ZUZUMI InnovaStar Technology</h1>
+    <header class="site-header">
+        <h1 class="logo">LOGO</h1>
+        <nav class="site-nav">
+            <ul class="nav-list">
+                <li class="nav-item nav-link" data-link="Botes.html">
+                    <span class="icon"><ion-icon name="trash-outline" size="large"></ion-icon></span>
+                    <span class="text">Botes</span>
                 </li>
-                <!-- <li>
-                    <a  href="#" data-link="camara.html">
-                        <ion-icon name="camera-outline"></ion-icon>
-                        <span>Cámara</span>
-                    </a>
-                </li> -->
-                <li>
-                    <a href="#" data-link="bascula.html">
-                        <ion-icon name="scale-outline"></ion-icon>
-                        <!-- <img width="30" height="30" src="https://img.icons8.com/dotty/80/kitchen-scales.png" alt="kitchen-scales"/> -->
-                        <span>Báscula</span>
-                    </a>
+                <li class="nav-item nav-link" data-link="Graficas.html">
+                    <span class="icon"><ion-icon name="analytics-outline" size="large"></ion-icon></span>
+                    <span class="text">Gráficas</span>
                 </li>
-                <li>
-                    <a href="#" data-link="candado.html">
-                        <!-- <img width="50" height="50" src="https://img.icons8.com/ios/50/lock-2.png" alt="lock-2"/> -->
-                        <!-- <ion-icon name="document-text-outline"></ion-icon> -->
-                        <ion-icon name="key-outline"></ion-icon>
-                        <span>Candado</span>
-                    </a>
+                <li class="nav-item nav-link" data-link="Usuario.html">
+                    <span class="icon"><ion-icon name="person-outline" size="large"></ion-icon></span>
+                    <span class="text">Usuario</span>
                 </li>
-                <li>
-                    <a  href="#" data-link="botes.html">
-                        <ion-icon name="trash-outline"></ion-icon>
-                        <span>Botes</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" data-link="gps.html">
-                        <ion-icon name="map-outline"></ion-icon>
-                        <span>GPS </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" data-link="usuario.html">
-                        <ion-icon name="person-outline"></ion-icon>
-                        <span>Usuario</span>
-                    </a>
+                <!-- La funcionalidad del botón "Salir" debe ser manejada por separado -->
+                <li class="nav-item" id="logoutButton">
+                    <span class="icon"><ion-icon name="log-out-outline" size="large"></ion-icon></span>
+                    <span class="text">Salir</span>
                 </li>
             </ul>
         </nav>
+        <button class="star-button">
+            <ion-icon name="star-outline"></ion-icon>
+        </button>
+    </header>
 
-        <div>
-            <div class="linea"></div>
+    <!-- Registros de botes -->
+    
+    
+    <!-- CUERPO DE BOTES -->
+    <main id="main-content">
+        
+        
+       
+    <!--  -->
+        <button class="custom-button button-green">
+            <ion-icon name="trash-outline" class="custom-icon"></ion-icon>
+            <span class="custom-text">Mis botes</span>
+        </button>
+        
+        <button class="custom-button button-green">
+            <ion-icon name="trash-outline" class="custom-icon"></ion-icon>
+            <span class="custom-text">Agregar</span>
+        </button>
+        
+        <!-- <button class="custom-button button-green">
+            <ion-icon name="trash-outline" class="custom-icon"></ion-icon>
+            <span class="custom-text">Monitoriar</span>
+        </button>
+        
+        <button class="custom-button button-red">
+            <ion-icon name="trash-outline" class="custom-icon"></ion-icon>
+            <span class="custom-text">Eliminar</span>
+        </button>         -->
+        
+          
 
-            <div class="modo-oscuro">
-                <div class="info">
-                    <ion-icon name="moon-outline"></ion-icon>
-                    <span>Modo <br> Oscuro</span>
-                </div>
-                <div class="switch">
-                    <div class="base">
-                        <div class="circulo">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <main>
-        <h1>Contenido</h1>
-        <p>Botes.....</p>
     </main>
 
+    <!-- Modal de confirmación (inicialmente oculto) -->
+    <div id="confirmacion-salir" class="modal-oculto">
+        <div class="modal-contenido">
+            <h2>Cerrar sesión</h2>
+            <p>¿Seguro que deseas cerrar sesión?</p>
+            <button id="confirmar-salir">Aceptar</button>
+            <button id="cancelar-salir">Cancelar</button>
+        </div>
+    </div>
+    
+    <!-- Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="../Script/inicio.js"></script>
+    <!-- JavaScript para la carga dinámica del contenido -->
+    <script src="Script/CambioBotones.js"></script>
+    <script src="Script/Confirmacion.js"></script>
 </body>
 </html>
