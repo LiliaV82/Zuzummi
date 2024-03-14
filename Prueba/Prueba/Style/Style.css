@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2.5em; /* Ajusta este valor como sea necesario */
+}
+
+.site-header {
+    background-color: rgba(51, 51, 51, 0.8); /* Fondo oscuro con opacidad */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Distribuye los elementos equitativamente */
+    position: relative; /* Asegúrate de que la posición sea relativa */
+    z-index: 1000; /* Valor alto para el z-index */
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.site-nav {
+    display: flex;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+    padding: 20px 30px; /* Aumenta el padding para hacer cada elemento más clickeable */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.nav-item .icon {
+    font-size: 2em; /* Tamaño grande para íconos */
+}
+
+.nav-item .text {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* Style.css */
+.site-header .star-button {
+    background-color: #4CAF50; /* Color verde para el botón de inicio */
+    border: none;
+    border-radius: 50%; /* Hacerlo redondo */
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Ajuste el ancho según sea necesario */
+    height: 50px; /* Ajuste la altura según sea necesario */
+}
+
+.site-header .star-button ion-icon {
+    font-size: 3em; /* Ajuste el tamaño según sea necesario */
+    color: #fff;
+}
+
+.site-header .star-button:hover {
+    background-color: #367c39; /* Un tono de verde más oscuro para el hover */
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin: 10px 0; /* Espacio vertical entre elementos del menú */
+        padding: 20px; /* Espacio interno para cada elemento del menú */
+    }
+}
+
+.ZuzumiEncabezado {
+    font-family: "Angkor", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-item.active {
+    background-color: #367c39; /* o el color que quieras para el estado activo */
+    border-radius: 10px; /* y cualquier otro estilo que quieras aplicar */
+}
+
+/* Agrega esto a tu archivo de estilos para aplicar interactividad a los .nav-item */
+.nav-item:hover {
+    background-color: #367c39; /* Cambia al color que prefieras */
+    cursor: pointer; /* Cambia el cursor a pointer para indicar que es un elemento clickeable */
+    border-radius: 10px; /* Puedes añadir un borde redondeado si así lo prefieres */
+}

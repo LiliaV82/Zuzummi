@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-content {
+    display: flex; /* Usamos flexbox */
+    flex-direction: row; /* Los elementos hijos se alinearán horizontalmente */
+    justify-content: center; /* Centramos los elementos horizontalmente */
+    align-items: stretch; /* Los elementos hijos se estiran para llenar el contenedor verticalmente */
+    flex: 1; /* El contenedor se expande para ocupar el espacio restante */
+    margin-top: 50px; /* Espacio para la barra superior */
+    margin-bottom: 50px; /* Espacio para la barra inferior o cualquier otro elemento que tengas al final */
+    gap: 20px; /* Espacio entre los botones */
+    padding: 20px; /* Espacio interno */
+    box-sizing: border-box;
+}
+
+.custom-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px; /* Ancho fijo para los botones */
+    flex-grow: 1; /* Los botones crecen para llenar el espacio verticalmente */
+    margin: 0;
+    padding: 1em;
+    border: none;
+    background-color: #4CAF50; /* Color verde por defecto */
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 1.5rem; /* Ajuste el tamaño de fuente del texto dentro del botón */
+    text-transform: uppercase;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.custom-button:not(.button-red):hover {
+    background-color: #00fd0d;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.custom-button.button-red {
+    background-color: #d32f2f;
+    
+}
+
+.custom-button.button-red:hover {
+    background-color: #f32416;
+}
+
+.custom-icon {
+    font-size: 6em; /* Ajuste del tamaño del icono a un valor más adecuado */
+}
+
+
+.custom-text {
+    font-size: 1.2rem; /* Tamaño ajustado del texto */
+    font-weight: bold;
+}
